@@ -32,6 +32,7 @@ jobs:
             #-Dsonar.tests= # optional. For more info about Code Coverage, please refer to https://docs.sonarcloud.io/enriching/test-coverage/overview/
             # Adds more detail to both client and server-side analysis logs, activating DEBUG mode for the scanner, and adding client-side environment variables and system properties to the server-side log of analysis report processing.
             #-Dsonar.verbose= # optional, default is false
+            #  -Dsonar.coverage.jacoco.xmlReportPaths=order-service-tdd-api/target/site/jacoco/jacoco.xml
             
   Build:
     runs-on: ubuntu-latest
@@ -53,4 +54,6 @@ jobs:
           -Dsonar.organization=${{vars.SONAR_ORG}} 
           -Dsonar.projectKey=${{vars.SONAR_PROJECT_KEY}} 
           -Dsonar.host.url=${{vars.SONAR_HOST_URL}} 
-          -Dsonar.login=${{secrets.SONAR_TOKEN}} 
+          -Dsonar.login=${{secrets.SONAR_TOKEN}}
+          
+
