@@ -17,3 +17,4 @@ For further reference, please consider the following sections:
 - An update by dev1
 - An update by tech
 - An update by tech2 and soon...
+- By Tech
