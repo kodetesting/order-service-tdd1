@@ -10,9 +10,17 @@ class SampleTest {
 
     @Test
     void test1() {
-        int i =1;
+        int i = 1;
         Assertions.assertThat(i)
                 .isEqualTo(1)
+                .isEven();
+    }
+
+    @Test
+    void test2() {
+        int i = 2;
+        Assertions.assertThat(i)
+                .isEqualTo(2)
                 .isEven();
     }
 
