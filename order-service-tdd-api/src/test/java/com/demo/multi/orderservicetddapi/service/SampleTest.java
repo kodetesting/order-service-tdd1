@@ -12,7 +12,7 @@ class SampleTest {
     void test1() {
         int i = 12;
         Assertions.assertThat(i)
-                .isEqualTo(1)
+                .isEqualTo(12)
                 .isEven();
     }
 
