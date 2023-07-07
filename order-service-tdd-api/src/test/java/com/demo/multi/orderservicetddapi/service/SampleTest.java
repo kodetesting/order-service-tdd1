@@ -12,4 +12,11 @@ class SampleTest {
     void test1() {
         Assertions.fail("this is failed");
     }
+
+    @Test
+    void test2() {
+        Assertions.assertThat(100)
+                .isEqualTo(100)
+                .isEven();
+    }
 }
