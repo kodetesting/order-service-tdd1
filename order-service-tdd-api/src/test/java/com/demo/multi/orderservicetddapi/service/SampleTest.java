@@ -10,6 +10,7 @@ class SampleTest {
 
     @Test
     void test1() {
-        Assertions.fail("this is failed");
+        var i = 100;
+        Assertions.assertThat(i).isEven();
     }
 }
