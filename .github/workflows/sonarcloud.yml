@@ -37,6 +37,8 @@ jobs:
         run: > 
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar 
           -Dsonar.host.url=${{vars.SONAR_HOST_URL}}
+          -Dsonar.organization=${{vars.SONAR_ORG}} 
+          -Dsonar.projectKey=${{vars.SONAR_PROJECT_KEY}}
         env:
           # Needed to get some information about the pull request, if any
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
