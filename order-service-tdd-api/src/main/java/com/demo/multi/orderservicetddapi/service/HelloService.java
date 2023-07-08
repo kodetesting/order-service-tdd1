@@ -16,4 +16,12 @@ public class HelloService {
     public int diffService(int n1, int n2) {
         return n1 - n2;
     }
+
+    public int mulService(int n1, int n2) {
+        return n1 * n2;
+    }
+
+    public int divService(int n1, int n2) {
+        return n1 / n2;
+    }
 }
